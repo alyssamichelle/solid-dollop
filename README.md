@@ -10,3 +10,5 @@ Still TODO:
 - [ ] debug test error
 - [ ] add ticket detail view with router
 - [ ] persistence would be cool... with caching :eyes:
+- [ ] add global routing for employee directory
+- [ ] populate employees
