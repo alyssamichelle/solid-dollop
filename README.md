@@ -4,7 +4,6 @@
 
 An Angular app for fun.
 
-<!-- add dollop header and image -->
 Still TODO:
 - [ ] assign users to tickets
 - [ ] debug test error
