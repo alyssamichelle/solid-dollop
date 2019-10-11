@@ -1,0 +1,15 @@
+body {
+  width: 80%;
+  margin: 0 auto;
+  color: #333739;
+  font-size: 30px;
+}
+
+* {
+  font-size: 30px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}

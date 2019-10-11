@@ -1,0 +1,1 @@
+An Angular app for fun.

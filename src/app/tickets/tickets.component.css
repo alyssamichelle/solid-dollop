@@ -1,0 +1,53 @@
+ul {
+  border: 1px solid #737779;
+
+  /* look ma, no psuedo elements used */
+  border-bottom: none;
+
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+li {
+  padding: 10px;
+  border-bottom: 1px solid #737779;
+}
+
+form {
+  display: flex;
+}
+
+form input {
+  border: none;
+  border-top: 1px solid #fe6a9a;
+}
+
+.input-container {
+  flex: 1;
+}
+
+.ticket-description {
+  width: 100%;
+}
+
+input[type="submit"] {
+  -webkit-appearance: none;
+  color: #fff;
+  border: #e409a1;
+  background-color: #fe6a9a;
+  transition: background-color, .15s;
+}
+
+input[type="submit"]:hover {
+  background-color: #e409a1;
+}
+
+input[type="submit"]:hover ~ input {
+  border-top: 1px solid #e409a1;
+}
+
+
+.error-message {
+  font-size: 15px;
+  color: #e409a1;
+}

@@ -1,0 +1,7 @@
+<section class="ticket-details" [routerLink]="['/tickets',ticket.id]">
+  <div class="ticket-description">{{ticket.description}}</div>
+
+  <input #checkbox class="complete-input" type="checkbox" id="complete-{{ticket.id}}" value="ticket.completed" (click)="completeTicket()">
+  <label class="complete-label" for="complete-{{ticket.id}}"></label>
+
+</section>

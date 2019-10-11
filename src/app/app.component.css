@@ -1,0 +1,13 @@
+/* TODO turn this into a scss file, for the love of  */
+
+.main-header {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #fe6a9a;
+}
+
+.main-header img {
+  max-width: 40px;
+  margin-right: 10px;
+}

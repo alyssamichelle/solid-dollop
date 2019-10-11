@@ -1,0 +1,22 @@
+<ul class="ticket-list">
+  <li *ngFor="let ticket of tickets|async">
+    <app-ticket [ticket]="ticket" (completed)="handleCompleted(ticket)"></app-ticket>
+  </li>
+  <li>
+    <form [formGroup]="newTicketDetails" (ngSubmit)="saveNewTicket()">
+      <div class="input-container">
+        <input type="text" name="ticketDescription" class="ticket-description" formControlName="ticketDescription"
+          placeholder="To do">
+        <div class="error-message" *ngIf="
+                newTicketDetails.get('ticketDescription')?.hasError('required') && 
+                newTicketDetails.get('ticketDescription')?.touched">
+          Please enter a description for your ticket. Make it juicy!
+        </div>
+      </div>
+  
+      <input type="submit" value="Add">
+    </form>
+  </li>
+</ul>
+
+<router-outlet></router-outlet>
