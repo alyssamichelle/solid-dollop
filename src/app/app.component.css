@@ -1,13 +1,26 @@
 /* TODO turn this into a scss file, for the love of  */
-
 .main-header {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: #fe6a9a;
+ display: flex;
+ justify-content: space-evenly;
+ align-items: center;
 }
 
-.main-header img {
+.main-header a {
+  text-decoration: none;
+  color: #fe6a9a;
+  transition: color .4s ease;
+}
+
+.main-header a:hover, .main-header a.active {
+  color: #e409a1;
+}
+
+.escape-hatch {
+  display: flex;
+  align-items: center;
+}
+
+.escape-hatch img {
   max-width: 40px;
   margin-right: 10px;
 }

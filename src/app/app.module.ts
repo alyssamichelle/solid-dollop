@@ -7,13 +7,15 @@ import { TicketsComponent } from './tickets/tickets.component';
 import { TicketComponent } from './ticket/ticket.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { TicketDetailComponent } from './ticket-detail/ticket-detail.component';
+import { EmployeesComponent } from './employees/employees.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TicketsComponent,
     TicketComponent,
-    TicketDetailComponent
+    TicketDetailComponent,
+    EmployeesComponent
   ],
   imports: [
     BrowserModule,
@@ -22,6 +24,7 @@ import { TicketDetailComponent } from './ticket-detail/ticket-detail.component';
       { path: '', component: TicketsComponent },
       { path: 'tickets', component: TicketsComponent },
       { path: 'tickets/:ticketId', component: TicketDetailComponent },
+      { path: 'employees', component: EmployeesComponent },
     ])
   ],
   providers: [BackendService],

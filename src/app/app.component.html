@@ -1,5 +1,12 @@
-<a href="/tickets" class="main-header">
-  <img src="assets/logo.png" alt="solid dollop's logo, a pink circle with a white SD">
-  <h1>Solid Dollop</h1>
-</a>
-<app-tickets></app-tickets>
+<div class="main-header">
+  <a href="/tickets" class="escape-hatch">
+    <img src="assets/logo.png" alt="solid dollop's logo, a pink circle with a white SD">
+    <h1>Solid Dollop</h1>
+  </a>
+
+  <a routerLinkActive="active" routerLink="tickets">Tickets</a>
+  <a routerLinkActive="active" routerLink="employees">Employee Directory</a>
+</div>
+
+
+<router-outlet></router-outlet>
