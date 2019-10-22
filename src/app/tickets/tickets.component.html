@@ -5,8 +5,7 @@
   <li>
     <form [formGroup]="newTicketDetails" (ngSubmit)="saveNewTicket()">
       <div class="input-container">
-        <input type="text" name="ticketDescription" class="ticket-description" formControlName="ticketDescription"
-          placeholder="To do">
+        <input type="text" name="ticketDescription" class="ticket-description" formControlName="ticketDescription" placeholder="To do">
         <div class="error-message" *ngIf="
                 newTicketDetails.get('ticketDescription')?.hasError('required') && 
                 newTicketDetails.get('ticketDescription')?.touched">
@@ -19,4 +18,4 @@
   </li>
 </ul>
 
-<!-- <router-outlet></router-outlet> -->
+<router-outlet></router-outlet>

@@ -11,19 +11,15 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class TicketDetailComponent implements OnInit {
 
-  ticket;
-  tickets;
+  ticket: Ticket;
+  @Input() tickets: Ticket[];
+  @Output() public toggleCompletedStatus = new EventEmitter();
   users = this.backend.users();
   ticketUserId = new FormControl('');
 
   ngOnInit() {
     this.route.paramMap.subscribe(params => {
-      // TODO figure out how to get the bloody ticket id
-      console.log("+params.get('ticketId'): ", +params.get('ticketId'));
-      console.log('this.tickets: ', this.tickets);
       this.ticket = this.tickets[+params.get('ticketId')];
-      console.log('this.ticket: ', this.ticket);
-
     });
   }
 

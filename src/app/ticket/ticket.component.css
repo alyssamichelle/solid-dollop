@@ -4,31 +4,13 @@ section {
   text-transform: lowercase;
 }
 
-.complete-input {
-  display: none;
-}
-
 .ticket-description {
   flex: 1;
-}
-
-.complete-label {
-  width: 20px;
-  height: 20px;
-  border: 1px solid #5a5a5a;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
   cursor: pointer;
+
+  transition: color .3s;
 }
 
-input:checked ~ label::after {
-  /* our checkmark */
-  display: block;
-  content: '';
-  width: 16px;
-  height: 16px;
-  background-color: #2daf49;
+.ticket-description:hover {
+  color: #fe6a9a;
 }
